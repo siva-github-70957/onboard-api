@@ -1,14 +1,11 @@
 const express = require('express');
 require('dotenv').config();
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
 const UserModel = require('./db/user');
-const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
 app.use(express.json());
-app.use(cookieParser());
 
 // app.use(cors({
 //     credentials: true,
