@@ -12,7 +12,7 @@ app.use(express.json());
 //     origin: 'http://127.0.0.1:3000',
 // }));
 app.use(cors({
-    origin: 'https://mphasis-onboarding.netlify.app',
+    origin: '*',
     methods: 'GET, POST, PUT, DELETE',
     credentials: true
 }));
